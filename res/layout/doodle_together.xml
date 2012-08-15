@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_blue"
+        android:gravity="center_horizontal"
+        android:text="@string/doodle_together"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_large"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/left_frame"
+        android:layout_width="120px"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_yellow"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/test"
+           
+            android:src="@drawable/paint_pallette" />
+
+        <ImageButton
+            android:id="@+id/brush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/color"
+            android:layout_below="@+id/color"
+            android:layout_marginTop="26dp"
+            android:contentDescription="@string/test"
+            android:src="@drawable/brushes" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/brush"
+            android:layout_marginTop="24dp"
+            android:text="@string/clear"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small"
+            android:onClick="clearScreen"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/clear_button"
+            android:layout_marginTop="23dp"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="29dp"
+            android:contentDescription="@string/test"
+            android:src="@drawable/share" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_draw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@+id/left_frame"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

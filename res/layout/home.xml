@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dip" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="16dip"
+        android:text="@string/welcome"
+        android:textColor="@color/dark_green"
+        android:textSize="@dimen/font_large"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/test"
+            android:src="@drawable/icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/start_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_yellow"
+            android:onClick="startSession"
+            android:padding="@dimen/padding_small"
+            android:text="@string/start_session"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/doodle_alone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue"
+            android:onClick="launchDraw"
+            android:padding="@dimen/padding_small"
+            android:text="@string/doodle_alone"
+            android:textColor="@color/dark_yellow"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
