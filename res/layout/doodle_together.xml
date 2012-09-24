@@ -5,19 +5,31 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/con_status"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:background="@color/dark_blue"
         android:gravity="center_horizontal"
-        android:text="@string/doodle_together"
+        android:text="@string/con_status"
         android:textColor="@color/white"
         android:textSize="@dimen/font_large"
         android:textStyle="bold"
         android:typeface="sans" />
 
+       <TextView
+        android:id="@+id/con_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:gravity="center_horizontal"
+        android:text="@string/con_status"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_large"
+        android:textStyle="bold"
+        android:typeface="sans" /> 
+        
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/left_frame"
@@ -36,7 +48,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:contentDescription="@string/test"
-           
+          
             android:src="@drawable/paint_pallette" />
 
         <ImageButton

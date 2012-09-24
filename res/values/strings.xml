@@ -7,7 +7,7 @@
     <string name="start_session">Start a session</string>
     <string name="doodle_alone">Doodle alone</string>
     <string name="doodle_together">Doodle Together</string>
-    <string name="hello_world">Welcome to Doodle Together</string>
+    <string name="con_status">Connection Status</string>
      <string name="hello">Hello World, DoodleTogether!</string>
     
     <string name="menu_settings">Setting</string>
